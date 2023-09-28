@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-27 08:41:40 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTA5LTI3OzA4OjMyOjI2IFBNOzIzNjE="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTA5LTI3OzA4OjQxOjQwIFBNOzE7MjQ2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="priceS" type="Real" array="False" size=""/>
+            <declare name="discountP" type="Real" array="False" size=""/>
+            <declare name="discountA" type="Real" array="False" size=""/>
+            <declare name="priceF" type="Real" array="False" size=""/>
+            <output expression="&quot;Input the items' price.&quot;" newline="True"/>
+            <input variable="priceS"/>
+            <output expression="&quot;Input the discount percentage in decimal form.&quot;" newline="True"/>
+            <input variable="discountP"/>
+            <assign variable="discountA" expression="priceS * discountP"/>
+            <assign variable="priceF" expression="priceS - discountA"/>
+            <output expression="&quot;You saved $&quot; &amp;discountA &amp;&quot; and the final price is $&quot; &amp;priceF &amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

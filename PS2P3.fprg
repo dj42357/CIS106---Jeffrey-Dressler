@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-27 08:13:20 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTA5LTI3OzA3OjI4OjE4IFBNOzIzNjY="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTA5LTI3OzA4OjEzOjIwIFBNOzI7MjQ2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="length" type="Real" array="False" size=""/>
+            <declare name="width" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="cir" type="Real" array="False" size=""/>
+            <output expression="&quot;Input the length of the rectangle.&quot;" newline="True"/>
+            <input variable="length"/>
+            <output expression="&quot;Input the width of the rectangle.&quot;" newline="True"/>
+            <input variable="width"/>
+            <assign variable="area" expression="length * width"/>
+            <assign variable="cir" expression="(2 * length) + (2 * width)"/>
+            <output expression="&quot;The area of the rectangle is &quot; &amp;area &amp;&quot; and the circumference is &quot; &amp;cir &amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
