@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 09:51:45 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTAzOzA5OjQ3OjE0IFBNOzIzNTE="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTAzOzA5OjUxOjQ1IFBNOzE7MjQ1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Lname" type="String" array="False" size=""/>
+            <declare name="Midterm" type="Real" array="False" size=""/>
+            <declare name="Final" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <output expression="&quot;Input your last name.&quot;" newline="True"/>
+            <input variable="Lname"/>
+            <output expression="&quot;Input your midterm score.&quot;" newline="True"/>
+            <input variable="Midterm"/>
+            <output expression="&quot;Input your final exam score.&quot;" newline="True"/>
+            <input variable="Final"/>
+            <assign variable="Total" expression="Midterm + Final"/>
+            <output expression="Lname &amp;&quot; scored a total of &quot; &amp;Total &amp;&quot; points.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

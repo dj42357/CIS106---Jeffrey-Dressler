@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 10:42:57 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTAzOzEwOjI1OjQyIFBNOzIzNDA="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTAzOzEwOjQyOjU3IFBNOzE7MjQ1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Make" type="String" array="False" size=""/>
+            <declare name="Model" type="String" array="False" size=""/>
+            <declare name="MSRP" type="Real" array="False" size=""/>
+            <declare name="Discount" type="Real" array="False" size=""/>
+            <declare name="DiscountAMT" type="Real" array="False" size=""/>
+            <declare name="Price" type="Real" array="False" size=""/>
+            <output expression="&quot;Input the make of the car.&quot;" newline="True"/>
+            <input variable="Make"/>
+            <output expression="&quot;Input the model of the car.&quot;" newline="True"/>
+            <input variable="Model"/>
+            <output expression="&quot;Input the MSRP,&quot;" newline="True"/>
+            <input variable="MSRP"/>
+            <output expression="&quot;Input the discount percentage as a decimal.&quot;" newline="True"/>
+            <input variable="Discount"/>
+            <assign variable="DiscountAMT" expression="MSRP * Discount"/>
+            <assign variable="Price" expression="MSRP - DiscountAMT"/>
+            <output expression="&quot;The &quot; &amp;Make &amp;&quot; &quot; &amp;Model &amp;&quot; has a MSRP of $&quot; &amp;MSRP &amp;&quot;, a discount percent of &quot; &amp;Discount &amp;&quot; ($&quot; &amp;DiscountAMT &amp;&quot;), and a final price of $&quot; &amp;Price &amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

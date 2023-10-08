@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 09:55:51 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTAzOzA5OjUxOjQ2IFBNOzIzNTE="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTAzOzA5OjU1OjUxIFBNOzE7MjQ1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="amount" type="Real" array="False" size=""/>
+            <declare name="SPLamount" type="Real" array="False" size=""/>
+            <output expression="&quot;Input the amount to split.&quot;" newline="True"/>
+            <input variable="amount"/>
+            <assign variable="SPLamount" expression="amount / 3"/>
+            <output expression="&quot;You each recieve $&quot; &amp;SPLamount &amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-03 09:47:03 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTAzOzA5OjM4OjM0IFBNOzIzNTM="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTAzOzA5OjQ3OjAzIFBNOzE7MjQ1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ticker" type="String" array="False" size=""/>
+            <declare name="Nshare" type="Real" array="False" size=""/>
+            <declare name="Cshare" type="Real" array="False" size=""/>
+            <declare name="invested" type="Real" array="False" size=""/>
+            <output expression="&quot;Input the stock ticker symbol.&quot;" newline="True"/>
+            <input variable="ticker"/>
+            <output expression="&quot;Input the number of shares.&quot;" newline="True"/>
+            <input variable="Nshare"/>
+            <output expression="&quot;Input the cost of the share(s).&quot;" newline="True"/>
+            <input variable="Cshare"/>
+            <assign variable="invested" expression="Nshare * Cshare"/>
+            <output expression="&quot;The amount invested in &quot; &amp;ticker &amp;&quot; is $&quot; &amp;invested &amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
