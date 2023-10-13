@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-12 08:34:59 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTEyOzA4OjI5OjA0IFBNOzIzNDk="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTEyOzA4OjM0OjU5IFBNOzE7MjQ2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PPS" type="Real" array="False" size=""/>
+            <declare name="CSP" type="Real" array="False" size=""/>
+            <declare name="Quantity" type="Real" array="False" size=""/>
+            <declare name="Change" type="Real" array="False" size=""/>
+            <output expression="&quot;Input the purchase price per share.&quot;" newline="True"/>
+            <input variable="PPS"/>
+            <output expression="&quot;Input the current stock price.&quot;" newline="True"/>
+            <input variable="CSP"/>
+            <output expression="&quot;Input the quantity of stock.&quot;" newline="True"/>
+            <input variable="Quantity"/>
+            <assign variable="Change" expression="(CSP - PPS) * Quantity"/>
+            <output expression="&quot;The amount lost/gained is $&quot; &amp;Change &amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

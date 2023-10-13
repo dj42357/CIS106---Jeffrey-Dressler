@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-13 03:04:32 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTEzOzAyOjU4OjUwIFBNOzIzNDc="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTEzOzAzOjA0OjMyIFBNOzE7MjQ0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Costs" type="Real" array="False" size=""/>
+            <declare name="PPU" type="Real" array="False" size=""/>
+            <declare name="CPU" type="Real" array="False" size=""/>
+            <declare name="BEP" type="Real" array="False" size=""/>
+            <output expression="&quot;Input the dollar amount for fixed costs.&quot;" newline="True"/>
+            <input variable="Costs"/>
+            <output expression="&quot;Input the price per unit.&quot;" newline="True"/>
+            <input variable="PPU"/>
+            <output expression="&quot;Input the cost per unit.&quot;" newline="True"/>
+            <input variable="CPU"/>
+            <assign variable="BEP" expression="Costs / (PPU - CPU)"/>
+            <output expression="&quot;Break even point: &quot; &amp;BEP &amp;&quot; units sold.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

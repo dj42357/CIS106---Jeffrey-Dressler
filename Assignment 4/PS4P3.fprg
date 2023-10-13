@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-12 08:45:46 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTEyOzA4OjM1OjA1IFBNOzIzNDc="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTEyOzA4OjQ1OjQ2IFBNOzE7MjQ2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Meal" type="Real" array="False" size=""/>
+            <declare name="Tip15" type="Real" array="False" size=""/>
+            <declare name="Tip18" type="Real" array="False" size=""/>
+            <declare name="Tip20" type="Real" array="False" size=""/>
+            <declare name="Total15" type="Real" array="False" size=""/>
+            <declare name="Total18" type="Real" array="False" size=""/>
+            <declare name="Total20" type="Real" array="False" size=""/>
+            <output expression="&quot;Input the price of the meal.&quot;" newline="True"/>
+            <input variable="Meal"/>
+            <assign variable="Tip15" expression="Meal * 0.15"/>
+            <assign variable="Total15" expression="Meal + Tip15"/>
+            <assign variable="Tip18" expression="Meal * 0.18"/>
+            <assign variable="Total18" expression="Meal + Tip18"/>
+            <assign variable="Tip20" expression="Meal * 0.2"/>
+            <assign variable="Total20" expression="Meal + Tip20"/>
+            <output expression="&quot;With 15% Tip:&quot; &amp;ToChar(13) &amp;ToChar(13) &amp;&quot;Total: $&quot; &amp;Meal &amp;ToChar(13) &amp;&quot;Tip: $&quot; &amp;Tip15 &amp;ToChar(13) &amp;&quot;Total with tip: $&quot; &amp;Total15" newline="True"/>
+            <output expression="&quot;With 18% Tip:&quot; &amp;ToChar(13) &amp;ToChar(13) &amp;&quot;Total: $&quot; &amp;Meal &amp;ToChar(13) &amp;&quot;Tip: $&quot; &amp;Tip18 &amp;ToChar(13) &amp;&quot;Total with tip: $&quot; &amp;Total18" newline="True"/>
+            <output expression="&quot;With 20% Tip:&quot; &amp;ToChar(13) &amp;ToChar(13) &amp;&quot;Total: $&quot; &amp;Meal &amp;ToChar(13) &amp;&quot;Tip: $&quot; &amp;Tip20 &amp;ToChar(13) &amp;&quot;Total with tip: $&quot; &amp;Total20" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
