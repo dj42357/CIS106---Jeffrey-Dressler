@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-12 08:28:59 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTEyOzA4OjIyOjAyIFBNOzIzNDA="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTEyOzA4OjI4OjU5IFBNOzI7MjQ2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Score1" type="Real" array="False" size=""/>
+            <declare name="Score2" type="Real" array="False" size=""/>
+            <declare name="WScore1" type="Real" array="False" size=""/>
+            <declare name="WScore2" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <output expression="&quot;Please input the first exam score.&quot;" newline="True"/>
+            <input variable="Score1"/>
+            <output expression="&quot;Please input the second exam score.&quot;" newline="True"/>
+            <input variable="Score2"/>
+            <assign variable="WScore1" expression="Score1 * 0.6"/>
+            <assign variable="WScore2" expression="Score2 * 0.4"/>
+            <assign variable="Total" expression="WScore1 + WScore2"/>
+            <output expression="&quot;Total score: &quot; &amp;Total &amp;&quot; points.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
