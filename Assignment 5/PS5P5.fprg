@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-19 03:03:34 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTE5OzAyOjM3OjQxIFBNOzIzNTA="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTEwLTE5OzAzOjAzOjM0IFBNOzE7MjQ1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="dependents" type="Integer" array="False" size=""/>
+            <declare name="gross" type="Real" array="False" size=""/>
+            <declare name="Agross" type="Real" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <output expression="&quot;Input your last name.&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Input the number of dependents.&quot;" newline="True"/>
+            <input variable="dependents"/>
+            <output expression="&quot;Input your gross income.&quot;" newline="True"/>
+            <input variable="gross"/>
+            <assign variable="Agross" expression="gross - dependents * 12000"/>
+            <if expression="Agross &lt;= 50000">
+                <then>
+                    <assign variable="rate" expression="0.1"/>
+                </then>
+                <else>
+                    <assign variable="rate" expression="0.2"/>
+                </else>
+            </if>
+            <assign variable="tax" expression="Agross * rate"/>
+            <if expression="tax &lt; 0">
+                <then>
+                    <assign variable="tax" expression="100"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Last name: &quot; &amp;name" newline="True"/>
+            <output expression="&quot;Gross income: $&quot; &amp;gross" newline="True"/>
+            <output expression="&quot;Number of dependents: &quot; &amp;dependents" newline="True"/>
+            <output expression="&quot;Adjusted gross income: $&quot; &amp;Agross" newline="True"/>
+            <output expression="&quot;Income tax: $&quot; &amp;tax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
