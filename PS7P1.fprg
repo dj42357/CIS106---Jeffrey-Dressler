@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-03 12:44:02 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTExLTAzOzEyOjM4OjIxIFBNOzIzNDQ="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTExLTAzOzEyOjQ0OjAyIFBNOzE7MjQ0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="1"/>
+            <while expression="count &lt; 25">
+                <output expression="count &amp;&quot; &quot;" newline="False"/>
+                <assign variable="count" expression="count + 2"/>
+            </while>
+            <output expression="count" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>
