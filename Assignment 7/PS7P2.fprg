@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jadre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-03 04:02:03 PM"/>
+        <attribute name="created" value="amFkcmU7TUlTVFlQQzsyMDIzLTExLTAzOzEyOjM4OjIxIFBNOzIzNDQ="/>
+        <attribute name="edited" value="amFkcmU7TUlTVFlQQzsyMDIzLTExLTAzOzA0OjAyOjAzIFBNOzU7MjQ0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="I know I over complicated this problem but I'm proud with how functional it is :)"/>
+            <comment text="The output should be:&#13;&#10;[start value] all integers between in increments [stop value]&#13;&#10;with no mistakes or overshooting the stopping number"/>
+            <comment text="For example:&#13;&#10;start = 1&#13;&#10;stop = 4&#13;&#10;increment = 2&#13;&#10;output = [1], 3, [4]"/>
+            <declare name="start" type="Integer" array="False" size=""/>
+            <declare name="stop" type="Integer" array="False" size=""/>
+            <declare name="increment" type="Integer" array="False" size=""/>
+            <declare name="end" type="Integer" array="False" size=""/>
+            <output expression="&quot;Input a starting value.&quot;" newline="True"/>
+            <input variable="start"/>
+            <output expression="&quot;Input the stopping value.&quot;" newline="True"/>
+            <input variable="stop"/>
+            <output expression="&quot;Input an increment value.&quot;" newline="True"/>
+            <input variable="increment"/>
+            <assign variable="end" expression="0"/>
+            <output expression="&quot;[&quot; &amp;start &amp;&quot;], &quot;" newline="False"/>
+            <comment text="I'm using the &quot;end&quot; variable here to check if the number WOULD go over the stopping point, then ending the loop before it happens."/>
+            <while expression="start &lt; stop and end = 0">
+                <if expression="start + increment &lt;= stop">
+                    <then>
+                        <assign variable="start" expression="start + increment"/>
+                    </then>
+                    <else>
+                        <assign variable="end" expression="1"/>
+                    </else>
+                </if>
+                <comment text="Using this boolean so it doesn't double post the last number"/>
+                <if expression="start = stop or end = 1">
+                    <then/>
+                    <else>
+                        <output expression="start &amp;&quot;, &quot;" newline="False"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;[&quot; &amp;stop &amp;&quot;]&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
