@@ -1,0 +1,27 @@
+###############The Idea of fiddling with a google docs chart doesn't make much sense to me, so instead I just used the #IPO format present in previous problems. I hope this is fine, let me know if I should redo it.
+
+#####Inputs:
+principle
+interest rate
+
+#####Processes:
+
+count = 0
+total interest = 0
+
+while count < 5
+  annual interest = principle * rate
+  ending balance = principle + annual interest
+  display count(years), principle, and ending balance for 5 years
+  principle = ending balance
+  total interest += annual interest
+
+display total interest
+
+#####Outputs:
+for all items:
+  count(years)
+  principle(starting balance)
+  ending balance
+
+total interest

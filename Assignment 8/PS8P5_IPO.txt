@@ -1,0 +1,34 @@
+###############The Idea of fiddling with a google docs chart doesn't make much sense to me, so instead I just used the #IPO format present in previous problems. I hope this is fine, let me know if I should redo it.
+
+#####Inputs:
+last name
+district code (I/O)
+credits
+
+#####Processes:
+count = 0
+tuition sum = 0
+
+get name
+while name is !="":
+  get district code & credits
+    if district code = I:
+      cost = 250
+    else:
+      cost = 500
+  tuition = cost * credits
+  count += 1
+  tuition sum += tuition
+  display name, credits & tuition
+  get next name
+
+display tuition sum & count
+
+#####Outputs:
+for all students:
+  name
+  credits
+  tuition
+
+tuition sum
+count

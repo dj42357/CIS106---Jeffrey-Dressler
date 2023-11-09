@@ -1,0 +1,33 @@
+###############The Idea of fiddling with a google docs chart doesn't make much sense to me, so instead I just used the #IPO format present in previous problems. I hope this is fine, let me know if I should redo it.
+
+#####Inputs:
+item
+qty
+price
+
+#####Processes:
+count = 0
+total extended price = 0
+
+get item
+while item is !="":
+  get qty & price
+  extended price = qty * price
+  count += 1
+  total extended price += extended price
+  display item, qty, price & extended price
+  get next item
+
+average = total extended price / count
+display total ext. price, count, & average
+
+#####Outputs:
+for all items:
+  item
+  qty
+  price
+  ext. price
+
+total ext. price
+count
+average

@@ -1,0 +1,19 @@
+###############The Idea of fiddling with a google docs chart doesn't make much sense to me, so instead I just used the #IPO format present in previous problems. I hope this is fine, let me know if I should redo it.
+
+#####Inputs:
+first number (a)
+second number (b)
+
+#####Processes:
+for c in range(1,19,1)
+  c = a + b
+  print c
+  a = b
+  b = c
+
+#####Outputs:
+a
+b
+c (18 times)
+
+#AKA the first 20 numbers of the Fibonacci sequence
