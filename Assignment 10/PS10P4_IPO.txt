@@ -1,0 +1,38 @@
+Inputs:
+y/n for loop
+last name
+miles from Chicago
+
+Processes:
+ticket price function (miles from Chicago)
+  if miles >= 30
+    ticket = 12
+  elif miles > 20
+    ticket = 10
+  elif miles > 10
+    ticket = 8
+  else
+    ticket = 5
+
+  return ticket
+
+sumTicket = 0
+
+"do you want to run the program? (y/n)"
+while answer = y
+  input last name, miles from Chicago
+  call ticket price function
+
+  display last name and ticket price
+
+  sumTicket += ticket
+  "run program again? (y/n)"
+
+display sumTicket
+
+Outputs:
+last name
+ticket price
+sum of ticket prices
+
+#prompt doesn't say to display anything, so I took some liberties

@@ -1,0 +1,41 @@
+Inputs:
+y/n for loop
+make
+model
+electric vehicle code (y/n)
+msrp
+
+Processes:
+otd price function (make, model, EVC (y/n), msrp)
+  if make = honda and model = accord
+    percentage off MSRP = 0.10
+  elif make = toyota and model = rav4
+    percentage off MSRP = 0.15
+  elif EVC = yes
+    percentage off MSRP = 0.30
+  else
+    percentage off MSRP = 0.05
+
+  total = (msrp * (1 - percentage off msrp)) * 1.07
+
+  return total
+
+sumMSRP and sumTotal = 0
+
+"do you want to run the program? (y/n)"
+while answer = y
+  input make, model, code and msrp
+  call otd price function
+  
+  display total
+  
+  sumMSRP += msrp
+  sumTotal += total
+  "run program again? (y/n)"
+
+display sumMSRP, sumTotal
+
+Outputs:
+total
+sumMSRP
+sumTotal

@@ -1,0 +1,43 @@
+Inputs:
+y/n for loop
+county
+house market value
+
+Processes:
+assessed value function (county, market value)
+  if county = Cook
+    AVP = 0.90
+  elif county = DuPage
+    AVP = 0.80
+  elif county = McHenry
+    AVP = 0.75
+  elif county = Kane
+    AVP = 0.60
+  else
+    AVP = 0.70
+
+  value = market value * AVP
+
+  return value
+
+sumMarketValues = 0
+sumValues = 0
+
+"do you want to run the program? (y/n)"
+while answer = y
+  input county and house market value
+  call assessed value function
+
+  display market value and value
+
+  sumMarketValues += marketValue
+  sumValue += value
+  "run program again? (y/n)"
+
+display sumMarketValues and sumValues
+
+Outputs:
+Market Value
+Value
+Sum of all Market Values
+Sum of all values

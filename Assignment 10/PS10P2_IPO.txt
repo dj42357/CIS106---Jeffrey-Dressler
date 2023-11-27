@@ -1,0 +1,22 @@
+Inputs:
+y/n for loop
+length
+width
+height
+
+Processes:
+footage function (length, width, height)
+  square footage = (2 * length * width) + (2 * length * height) + (2 * width * height)
+
+  return square footage
+
+"do you want to run the program? (y/n)"
+while answer = y
+  input length, width, height
+  call footage function
+  gallons of paint needed = square footage / 50
+  display gallons of paint needed
+  "run program again? (y/n)"
+
+Outputs:
+gallons of paint needed

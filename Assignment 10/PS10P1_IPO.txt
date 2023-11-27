@@ -1,0 +1,32 @@
+Inputs:
+y/n for loop
+last name
+month
+sales
+
+Processes:
+forecast function (month, sales)
+  if month is Jan/Feb/Mar
+    percent is 0.10
+  if month is Apr/May/Jun
+    percent is 0.15
+  if month is Jul/Aug/Sep
+    percent is 0.20
+  if month is Oct/Nov/Dec
+    percent is 0.25
+
+  next months sales = sales * (1 + percent)
+
+  return next months sales
+
+"do you want to run the program? (y/n)"
+while answer = y
+  input last name, month, sales
+  call forecast function
+  display next months sales
+  "run program again? (y/n)"
+
+Outputs:
+next months sales
+
+#we ask them for last name but don't use it for anything?
