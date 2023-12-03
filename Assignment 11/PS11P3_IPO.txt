@@ -1,0 +1,24 @@
+Inputs:
+last name
+sale amount
+
+Processes:
+commission function (sale amount)
+  if sale amount > 100,000
+    commission percentage = 0.10
+  else
+    commission percentage = 0.05
+
+  commission = sale amount * commission percentage
+  target = sale amount * 1.05
+  
+  return commission, target
+
+input last name, sale amount
+call commission function
+display last name, commission and target
+
+Outputs:
+last name
+commission
+target

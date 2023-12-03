@@ -1,0 +1,22 @@
+Inputs:
+quantity
+price
+discount percentage
+
+Processes:
+discount function (quantity, price, discount percentage)
+  extended price = quantity * price
+  discount amount = extended price * discount percentage 
+  discounted price = extended price - discount amount
+
+  return discount amount, discounted price
+
+input quantity, price, discount percentage
+call discount function
+display quantity, price, discount amount, discounted price
+
+Outputs:
+quantity
+price
+discount amount
+discounted price

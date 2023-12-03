@@ -1,0 +1,25 @@
+Inputs:
+qty
+unit price
+
+Processes:
+total function (qty, unit price)
+  global total
+  total = qty * unit price
+  global tax
+  tax = total * 0.07
+
+  return
+
+input qty, unit price
+call total function
+display total, tax
+
+#BONUS (to see if the global variables worked out)
+final price = total + tax
+display final price
+
+Outputs:
+total
+tax
+final price

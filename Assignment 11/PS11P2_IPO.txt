@@ -1,0 +1,21 @@
+Inputs:
+last name
+exam score 1
+exam score 2
+exam score 3
+
+Processes:
+score function (exam score 1, 2 and 3)
+  total = score 1 + score 2 + score 3
+  average = total / 3
+
+  return total, average
+
+input last name, exam score 1, 2 and 3
+call score function
+display last name, total and average
+
+Outputs:
+last name
+total
+average

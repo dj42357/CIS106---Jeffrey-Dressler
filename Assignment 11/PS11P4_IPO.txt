@@ -1,0 +1,23 @@
+Inputs:
+last name
+score 1
+score 2
+score 3
+handicap percentage
+
+Processes:
+score function (score 1, score 2, score 3, handicap percentage)
+  total score = score 1 + score 2 + score 3
+  scoreAvg = total score / 3
+  scoreAvgH = scoreAvg * handicap percentage
+
+  return scoreAvg, scoreAvgH
+
+input last name, score 1, 2, 3 and handicap percentage
+call score function
+display last name, scoreAvg and scoreAvgH
+
+Outputs:
+last name
+scoreAvg
+scoreAvgH
